@@ -16,7 +16,7 @@ import { UserContext } from "@/Utilities/Contexts/UserContextProvider";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { CartContext } from "@/Utilities/Contexts/CartContextProvider";
-import logo from "@/assets/img/abc-logo-icon.png";
+import logo from "@/assets/img/stc-logo-icon.png";
 import { FaRegCopy } from "react-icons/fa";
 import { PlaceOrderContext } from "@/Utilities/Contexts/PlaceOrderContextProvider";
 import { useRouter } from "next/navigation";
