@@ -1,0 +1,303 @@
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+/* Gilroy Font */
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+/* Gilroy Font */
+
+:root {
+  --primary-font: "Gilroy, sans-serif";
+  --primary-color: #09090b;
+  --secondary-color: #e31736;
+  --gardiant: linear-gradient(
+    180deg,
+    rgba(170, 170, 170, 0.1) 0%,
+    #cfcfcf 100%
+  );
+  --accent: #929292;
+  --accent-2: #e2e2e2;
+  --white: #ffffff;
+  --border-color: #929292;
+  --border-color2: #424242;
+  --border-color3: #cfcfcf;
+  --text-color: #424242;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+}
+
+.container {
+  padding: 0 18px !important;
+}
+
+/*====================
+Reset Default CSS End
+====================*/
+
+/* Payment Start */
+
+.shipping_method_container {
+  width: 100%;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #eeeff3;
+}
+
+.shipping_method_container .credit_card_wrapper {
+  width: 100%;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #eeeff3;
+  margin-bottom: 15px;
+}
+
+.shipping_method_container .credit_card {
+  margin-bottom: 15px !important;
+}
+
+.shipping_method_container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.shipping_method_container .method_option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eeeff3;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.shipping_method_container .method_option:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.shipping_method_container .credit_card {
+  border: none;
+  border-bottom: 1px solid var(--accent-2);
+  border-radius: 0px;
+  padding: 0px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.shipping_method_container .method_option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #ff0000;
+  cursor: pointer;
+}
+
+.shipping_method_container .method_option input {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.shipping_method_container .form_group h2 {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.shipping_method_container .method_label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.shipping_method_container .method_label .card_logo_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shipping_method_container .card_logo_box .paypal_logo,
+.shipping_method_container .card_logo_box .stripe_logo,
+.shipping_method_container .card_logo_box .logo {
+  display: inline-block;
+  border: 1px solid var(--accent-2);
+  border-radius: 4px;
+  background-size: contain;
+  object-fit: cover;
+  background-position: center;
+  padding: 5px;
+}
+
+.shipping_method_container .card_logo_box .paypal_logo img,
+.shipping_method_container .card_logo_box .stripe_logo img,
+.shipping_method_container .card_logo_box .logo img {
+  width: 60px;
+  height: 20px;
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+}
+
+.shipping_method_container .credit_card_info {
+  margin-top: 10px;
+}
+
+.shipping_method_container .credit_card_info input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eeeff3;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.shipping_method_container .credit_card_row {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .shipping_method_container h2 {
+    font-size: 24px;
+  }
+
+  .shipping_method_container .form_group h2,
+  .shipping_method_container .method_label {
+    font-size: 16px;
+  }
+
+  .shipping_method_container .credit_card_row {
+    display: block;
+  }
+
+  .billing_details .breadcrumb {
+    margin: 30px 0;
+  }
+
+  .shipping_method_container .card_logo_box .paypal_logo img,
+  .shipping_method_container .card_logo_box .stripe_logo img,
+  .shipping_method_container .card_logo_box .logo img {
+    width: 50px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .shipping_method_container .card_logo_box .paypal_logo img,
+  .shipping_method_container .card_logo_box .stripe_logo img,
+  .shipping_method_container .card_logo_box .logo img {
+    width: 40px;
+  }
+
+  .shipping_method_container .method_label .card_logo_box {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .shipping_method_container .credit_card_method_label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .shipping_method_container .card_logo_box .paypal_logo,
+  .shipping_method_container .card_logo_box .stripe_logo,
+  .shipping_method_container .card_logo_box .logo {
+    padding: 0px;
+  }
+}

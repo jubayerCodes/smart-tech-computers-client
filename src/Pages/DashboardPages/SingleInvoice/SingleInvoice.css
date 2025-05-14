@@ -1,0 +1,238 @@
+.invoice-page .page-content {
+    margin-bottom: 70px 70px 0 70px;
+    padding: 90px 20px 70px 20px;
+}
+
+.invoice {
+    width: 100%;
+    margin: auto;
+}
+
+.invoice .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.invoice .invoice-header .logo img {
+    width: 190px;
+}
+
+
+.invoice .invoice-header .info div {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+.invoice .invoice-header .info div:first-child *{
+    color: #226DAC;
+}
+.invoice .invoice-header .info div:nth-child(2) *{
+    color: #D461AD;
+}
+
+.invoice .invoice-header .info div h3 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.invoice .invoice-header .info div img {
+    height: 26px;
+}
+
+.invoice .invoice-header .info div h4 {
+    font-size: 16px;
+    margin: 0px
+}
+
+.invoice .invoice-header .info div p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.invoice .invoice-header .info div.contact p span{
+    color: #226DAC;
+}
+
+.invoice .invoice-header .info div.contact p {
+    font-size: 10px;
+}
+
+.invoice .invoice-body {
+    margin-top: 14px;
+}
+
+.invoice .invoice-body .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.invoice .invoice-body .heading h2 {
+    font-size: 22px;
+    margin: 0px;
+    color: black;
+}
+
+.invoice .invoice-body .details-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.invoice .invoice-body .details-container div.info-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.invoice .invoice-body .details-container div.info-row p.left {
+    min-width: 120px;
+    font-weight: 500;
+    color: #171717
+}
+
+.invoice .invoice-body .details-container .customer-details div.info-row p.left{
+    min-width: 106px;
+}
+
+.invoice .invoice-body .details-container .billing-details div.info-row p.left{
+    min-width: 116px;
+}
+
+.invoice .invoice-body .details-container div.info-row p.right {
+    color: #888888
+}
+
+.invoice .invoice-body .details-container div.info-row p {
+    margin-bottom: 0px;
+}
+
+.invoice .invoice-body .products-table {
+    margin-top: 20px;
+}
+
+.invoice .invoice-body .products-table table {
+    width: 100%;
+}
+
+
+.invoice .invoice-body .products-table table th {
+    font-weight: 600;
+    color: #171717
+}
+
+.invoice .invoice-body .products-table table td {
+    color: #888888
+}
+
+.invoice .invoice-body .products-table table th,
+.invoice .invoice-body .products-table table td {
+    border: 1px solid #929292;
+    padding: 4px 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.invoice .invoice-body .products-table table th:nth-child(2),
+.invoice .invoice-body .products-table table td:nth-child(2) {
+    text-align: start;
+    word-wrap: break-word;
+    /* max-width: 200px; */
+}
+
+.invoice .invoice-body .products-table table th:nth-child(4),
+.invoice .invoice-body .products-table table td:nth-child(4),
+.invoice .invoice-body .products-table table th:nth-child(5),
+.invoice .invoice-body .products-table table td:nth-child(5){
+    text-align: end;
+    width: 120px;
+}
+
+.invoice .invoice-body .products-table table tr.total-row td:nth-child(1) {
+    border: none;
+}
+
+.invoice .invoice-body .products-table table tr.total-row td:nth-child(2) {
+    font-weight: 600;
+    color: #171717;
+    text-align: end;
+}
+
+.invoice .invoice-body .products-table table tr.total-row td:nth-child(3){
+    text-align: end;
+}
+
+.invoice .invoice-body .conditions {
+    margin-top: 30px;
+    width: 100%;
+    color: #171717;
+    font-size: 14px;
+}
+
+.invoice .invoice-body .conditions div:first-child{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.invoice .invoice-body .conditions div:nth-child(2){
+    margin: auto;
+    width: 650px;
+}
+
+.invoice .invoice-body .conditions div ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 24px !important;
+    font-size: 12px;
+}
+
+.invoice .invoice-body .conditions div span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.invoice .invoice-body .conditions div span:nth-child(2){
+    padding-left: 10px
+}
+
+.invoice .invoice-body .conditions p {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.invoice .branding {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.invoice .branding p,
+.invoice .branding a {
+    font-size: 12px;
+    color: #171717;
+    margin-bottom: 0;
+}
+
+
+@media print {
+    .invoice-btn {
+        display: none !important;
+    }
+
+    .page-content {
+        padding: 0px 2px !important;
+    }
+
+    title{
+        display: none !important;
+    }
+}

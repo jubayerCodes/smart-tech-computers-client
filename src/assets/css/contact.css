@@ -1,0 +1,253 @@
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+/* Gilroy Font */
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+/* Gilroy Font */
+
+:root {
+  --primary-font: "Gilroy, sans-serif";
+  --primary-color: #09090b;
+  --secondary-color: #e31736;
+  --gardiant: linear-gradient(
+    180deg,
+    rgba(170, 170, 170, 0.1) 0%,
+    #cfcfcf 100%
+  );
+  --accent: #929292;
+  --accent-2: #e2e2e2;
+  --white: #ffffff;
+  --border-color: #929292;
+  --border-color2: #424242;
+  --border-color3: #cfcfcf;
+  --text-color: #424242;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+}
+
+.container {
+  padding: 0 18px !important;
+}
+
+/*====================
+    Reset Default CSS End
+    ====================*/
+
+/* Contact Start */
+.contact_wrapper {
+  margin-top: 70px;
+  border: 1px solid var(--accent-2);
+  border-radius: 16px;
+  padding: 20px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.contact_wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+#envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+#star1,
+#star2,
+#star3,
+#star4,
+#star5,
+#star6 {
+  animation: blink 1s ease-in-out infinite;
+}
+#star2 {
+  animation-delay: 100ms;
+}
+#star3 {
+  animation-delay: 500ms;
+}
+#star4 {
+  animation-delay: 700ms;
+}
+#star5 {
+  animation-delay: 300ms;
+}
+#star6 {
+  animation-delay: 200ms;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Form */
+
+.contact_wrapper .contact-form-section {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.contact_wrapper .contact-form-section h1 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contact_wrapper .form-group {
+  margin-bottom: 10px;
+}
+
+.contact_wrapper .form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact_wrapper .form-group input[type="text"],
+.contact_wrapper .form-group input[type="email"],
+.contact_wrapper .form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.contact_wrapper .send_btn {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.contact_wrapper .send_btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Contact End */

@@ -1,0 +1,134 @@
+.modal-content .table {
+    width: 100%;
+}
+
+.modal-content .table thead th {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.modal-content .table tbody .product_profile {
+    width: 100%;
+    display: flex;
+}
+
+.modal-content .table tbody td:nth-child(2),
+.modal-content .table thead th:nth-child(2) {
+    text-align: center !important;
+}
+
+.modal-content .table tbody td:nth-child(1),
+.modal-content .table thead th:nth-child(1) {
+    padding-left: 0px;
+}
+
+.modal-content .table tbody td:nth-last-child(1),
+.modal-content .table thead th:nth-last-child(1) {
+    padding-right: 0px;
+    text-align: right !important;
+}
+
+.modal-content .table tbody td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-bottom: none !important;
+}
+
+.modal-content .table tbody tr,
+.modal-content .table thead {
+    border-bottom: 1px solid var(--accent-2) !important;
+}
+
+.modal-content .table tbody tr:nth-last-child(1) {
+    border-bottom: none !important;
+}
+
+.modal-content .table .cart_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--gardiant);
+    margin-right: 14px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.modal-content .table .cart_img_details {
+    width: 70%;
+}
+
+.modal-content .table .cart_img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.modal-content .table tbody .product_name {
+    font-size: 16px;
+    color: var(--text-color2);
+    font-weight: bold;
+    margin-bottom: 2px;
+    max-width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-content tbody tr .product_price h3,
+.modal-content tbody tr .total h3 {
+    font-size: 16px;
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+.table td.status button {
+    border: none;
+    text-transform: capitalize;
+}
+
+.table td.status.pending button {
+    background-color: #FFAD15;
+    color: black;
+}
+
+.table td.status.confirmed button {
+    background-color: #21B26F;
+}
+
+.table td.status.cancelled button {
+    background-color: #DC143B;
+}
+
+.table td.status.delivered button {
+    background-color: #2576F9;
+}
+
+.table td.status.processing button {
+    background-color: #7D25F9;
+}
+
+.table td.status button:focus {
+    box-shadow: none;
+}
+
+.table .dropdown-menu {
+    padding: 5px;
+}
+
+.table .dropdown-item-text {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.table .dropdown-item-text:hover {
+    background-color: var(--primary-color);
+    color: white;
+}

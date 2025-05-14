@@ -1,0 +1,420 @@
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+/* Gilroy Font */
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy, sans-serif";
+  src: url("../fonts/gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+/* Gilroy Font */
+
+:root {
+  --primary-font: "Gilroy, sans-serif";
+  --primary-color: #09090b;
+  --secondary-color: #e31736;
+  --gardiant: linear-gradient(
+    180deg,
+    rgba(170, 170, 170, 0.1) 0%,
+    #cfcfcf 100%
+  );
+  --accent: #929292;
+  --accent-2: #e2e2e2;
+  --white: #ffffff;
+  --border-color: #929292;
+  --border-color2: #424242;
+  --border-color3: #cfcfcf;
+  --text-color: #424242;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+}
+
+.container {
+  padding: 0 18px !important;
+}
+
+/*====================
+  Reset Default CSS End
+  ====================*/
+
+/* Thank You Start */
+
+.thank_you {
+  margin-bottom: 70px;
+}
+
+.thank_you .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  margin: 50px 0;
+}
+
+.thank_you .breadcrumb span,
+.thank_you .breadcrumb a {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.thank_you .breadcrumb svg {
+  width: 18px;
+  height: 18px;
+  margin: 0px 10px 0px 10px;
+}
+
+.thank_you .heading_wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thank_you .heading_wrapper .icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.thank_you .heading_wrapper h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.thank_you .heading_wrapper p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+  margin: 0;
+}
+
+.thank_you .payment_details {
+  border-bottom: 1px solid #eeeff3;
+  border-top: 1px solid #eeeff3;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.thank_you .payment_details .details {
+  margin-bottom: 10px;
+}
+
+.thank_you .payment_details .details:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.thank_you .payment_details .details:nth-last-of-type(1) p {
+  margin-bottom: 0px;
+}
+
+.thank_you .payment_details .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.thank_you .payment_details p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.thank_you .thank_you_summery {
+  max-width: 600px;
+  border: 1px solid #eeeff3;
+  padding: 20px;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.thank_you .cart_items .type_wrap_container {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.thank_you .cart_items .type_wrap_container .type_wrap {
+  font-size: 16px;
+  color: var(--accent);
+  font-weight: 500;
+  margin: 0;
+}
+
+.thank_you .cart_items .type_wrap_container .type_wrap span {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.thank_you .order_summary {
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.thank_you .order_summary .summary_item {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thank_you .summary_item:nth-last-of-type(1) {
+  color: var(--primary-color) !important;
+  border-top: 1px solid var(--accent-2) !important;
+  padding-top: 16px;
+  margin-bottom: 5px;
+}
+
+.thank_you .order_summary .summary_item .price1 {
+  color: var(--primary-color);
+}
+
+.thank_you .order_summary .summary_item .grand_price {
+  font-size: 22px !important;
+  color: var(--primary-color);
+}
+
+.thank_you .order_summary .checkout_btn,
+.thank_you .order_summary .continue_btn {
+  width: 100%;
+  font-size: 18px;
+  color: var(--white);
+  background: var(--secondary-color);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 15px;
+  transition: 0.4s;
+}
+
+.thank_you .order_summary .checkout_btn:hover,
+.thank_you .order_summary .continue_btn:hover {
+  background: var(--primary-color);
+}
+
+.thank_you .cart_header h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.thank_you .cart_items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  height: auto;
+  margin-right: 40px;
+}
+
+.thank_you .cart_items::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.thank_you .cart_items .price {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.thank_you .cart_items .product_details_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.thank_you .cart_items .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thank_you .cart_items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.thank_you .cart_items li .product_item {
+  width: 25%;
+  height: 25%;
+  border-radius: 12px;
+  background: var(--gardiant);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.thank_you .cart_items li .product_item img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.thank_you .cart_items .item .title {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-btn{
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: 0.3s;
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  margin: 20px auto 0;
+  display: inline-block;
+}
+
+.home-btn:hover{
+  background: var(--primary-color)
+}
+
+@media screen and (max-width: 992px) {
+  .thank_you {
+    margin-bottom: 50px;
+  }
+
+  .thank_you .breadcrumb {
+    margin: 30px 0;
+  }
+
+  .thank_you .form_group_wrapper {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .thank_you .thank_you_summery {
+    padding: 20px 14px;
+    margin-top: 30px;
+  }
+
+  .thank_you .cart_items .price,
+  .thank_you .cart_items .item .title {
+    font-size: 16px;
+  }
+
+  .thank_you .cart_items .item .title {
+    margin-bottom: 5px;
+  }
+
+  .thank_you .cart_items li .product_item {
+    border-radius: 6px !important;
+  }
+
+  .thank_you .order_summary .checkout_btn,
+  .thank_you .discount_wrapper .apply_btn,
+  .thank_you .order_summary .continue_btn {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .thank_you .cart_items .item .title {
+    width: 150px;
+  }
+}
+
+/* Thank You */
